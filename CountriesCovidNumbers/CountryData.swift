@@ -7,15 +7,15 @@
 
 import Foundation
 
-public struct CountryData: Decodable {
+public struct properties: Decodable {
     public let country: String
     public let code: String
     public let confirmed: Int
     public let recovered: Int
     public let critical: Int
-    public let deaths: Float
-    public let latitude: Float
-    public let longitude: Int
-    public let lastChange: Data
-    public let lastUpdate: Data
+    public let deaths: Int
+    public let latitude: Double
+    public let longitude: Double
+    public let lastChange: String
+    public let lastUpdate: String
 }
