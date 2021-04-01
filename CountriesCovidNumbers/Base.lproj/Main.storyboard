@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L0L-FT-OMp">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -8,6 +8,32 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Mow-ba-663">
+            <objects>
+                <navigationController id="L0L-FT-OMp" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ayY-4k-V7D">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="eGw-PA-8gA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cv6-Am-OhK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1210" y="54"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="bid-El-lpt">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="sY4-yn-dxN" customClass="PageViewController" customModule="CountriesCovidNumbers" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hqi-ng-fRF"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qJa-QX-0IF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="836" y="54"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -16,9 +42,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qri-Jl-XBn">
-                                <rect key="frame" x="177" y="824" width="61" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qri-Jl-XBn">
+                                <rect key="frame" x="176.5" y="429" width="61" height="38"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -28,11 +53,50 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qri-Jl-XBn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="f8O-pZ-jOy"/>
+                            <constraint firstItem="qri-Jl-XBn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yI9-I4-zHJ"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="gPf-RP-UcY"/>
+                    <connections>
+                        <segue destination="sY4-yn-dxN" kind="show" identifier="fromHomeToPageView" id="dhU-yv-wJp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-197" y="54"/>
+        </scene>
+        <!--Pages View-->
+        <scene sceneID="pNT-Cv-xBj">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v8S-J7-002" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="HNL-m0-JP3" customClass="PagesView" customModule="CountriesCovidNumbers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PsU-sk-CyB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Htb-MB-muB">
+                                <rect key="frame" x="171.5" y="430" width="71" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vwu-kh-oO9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Htb-MB-muB" firstAttribute="centerX" secondItem="PsU-sk-CyB" secondAttribute="centerX" id="9kF-9L-jLD"/>
+                            <constraint firstItem="Htb-MB-muB" firstAttribute="centerY" secondItem="PsU-sk-CyB" secondAttribute="centerY" id="GIa-ex-67U"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pZ7-ha-eFD"/>
+                    <connections>
+                        <outlet property="labelOutlet" destination="Htb-MB-muB" id="0xk-mO-Uwk"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1796" y="54"/>
         </scene>
     </scenes>
     <resources>

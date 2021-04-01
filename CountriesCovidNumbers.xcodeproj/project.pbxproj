@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		639D9E8826162B950067AB51 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639D9E8726162B950067AB51 /* Countries.swift */; };
+		639D9E8B261634ED0067AB51 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639D9E8A261634ED0067AB51 /* PageViewController.swift */; };
+		639D9E8E2616386B0067AB51 /* PagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639D9E8D2616386B0067AB51 /* PagesView.swift */; };
 		639FEB612614F201003CE6A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FEB602614F201003CE6A1 /* AppDelegate.swift */; };
 		639FEB632614F201003CE6A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FEB622614F201003CE6A1 /* SceneDelegate.swift */; };
 		639FEB652614F201003CE6A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FEB642614F201003CE6A1 /* ViewController.swift */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		639D9E8726162B950067AB51 /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
+		639D9E8A261634ED0067AB51 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		639D9E8D2616386B0067AB51 /* PagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagesView.swift; sourceTree = "<group>"; };
 		639FEB5D2614F201003CE6A1 /* CountriesCovidNumbers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountriesCovidNumbers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		639FEB602614F201003CE6A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		639FEB622614F201003CE6A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,12 +69,15 @@
 				639FEB602614F201003CE6A1 /* AppDelegate.swift */,
 				639FEB622614F201003CE6A1 /* SceneDelegate.swift */,
 				639FEB642614F201003CE6A1 /* ViewController.swift */,
+				639D9E8A261634ED0067AB51 /* PageViewController.swift */,
 				639FEB752614F2CA003CE6A1 /* GetDatas.swift */,
 				639FEB782614F759003CE6A1 /* CountryData.swift */,
 				639FEB662614F201003CE6A1 /* Main.storyboard */,
+				639D9E8D2616386B0067AB51 /* PagesView.swift */,
 				639FEB692614F202003CE6A1 /* Assets.xcassets */,
 				639FEB6B2614F202003CE6A1 /* LaunchScreen.storyboard */,
 				639FEB6E2614F202003CE6A1 /* Info.plist */,
+				639D9E8726162B950067AB51 /* Countries.swift */,
 			);
 			path = CountriesCovidNumbers;
 			sourceTree = "<group>";
@@ -144,9 +153,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				639FEB652614F201003CE6A1 /* ViewController.swift in Sources */,
+				639D9E8B261634ED0067AB51 /* PageViewController.swift in Sources */,
 				639FEB792614F759003CE6A1 /* CountryData.swift in Sources */,
 				639FEB612614F201003CE6A1 /* AppDelegate.swift in Sources */,
 				639FEB762614F2CA003CE6A1 /* GetDatas.swift in Sources */,
+				639D9E8E2616386B0067AB51 /* PagesView.swift in Sources */,
+				639D9E8826162B950067AB51 /* Countries.swift in Sources */,
 				639FEB632614F201003CE6A1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
